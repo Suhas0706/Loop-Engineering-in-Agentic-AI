@@ -2,7 +2,6 @@
 
 A hands-on demo comparing a **one-shot (non-loop) agent** with a **loop agent** that generates, evaluates, and improves its own output until it meets the requirements.
 
-📺 **Video tutorial:** [Learn Loop Engineering in 30 Minutes](https://www.youtube.com/watch?v=e9xOW7mH_vY) by DSwithBappy
 
 ---
 
@@ -63,7 +62,7 @@ Evaluation: PASSED
 
 - Python 3
 - [Groq API](https://console.groq.com/)
-- Model: `llama-3.3-70b-versatile`
+- Model: `openai/gpt-oss-120b`
 - Google Colab
 
 ---
@@ -132,7 +131,7 @@ for iteration in range(1, MAX_ITERATIONS + 1):
 
 | Variable | Default | Description |
 |---|---|---|
-| `MODEL_NAME` | `llama-3.3-70b-versatile` | Groq model used for generation |
+| `MODEL_NAME` | `openai/gpt-oss-120b` | Groq model used for generation |
 | `MAX_ITERATIONS` | `3` | Maximum retry attempts |
 | `ORDER_ID` | `ORD-2026-101` | Order ID the reply must include |
 
@@ -155,11 +154,7 @@ for iteration in range(1, MAX_ITERATIONS + 1):
 - Structured data extraction with schema validation
 - Report and document drafting with style checks
 
----
-
-## Credits
-
-Tutorial by [DSwithBappy](https://www.youtube.com/watch?v=e9xOW7mH_vY).
+--
 
 ## License
 
